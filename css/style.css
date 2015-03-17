@@ -1,0 +1,93 @@
+/*fonts*/
+@import url(http://fonts.googleapis.com/css?family=Bangers);
+
+/*stylesheet animations*/
+@import url(animations.css);
+
+/*start banner*/
+.banner-plane {
+	height: 250px;
+	width: 900px;
+	margin: 0 auto;
+	position: relative;
+	background: url('../img/bg.jpg') no-repeat;
+	border-radius: 20px;
+	border: 1px solid #999;
+	overflow: hidden;
+}
+
+	[class^="txt"], [class^="img"] {
+		position: absolute;
+	}
+
+	/*images*/
+	.img01 { 	/*clouds on the background, speed slow*/
+		right: 900px;
+		-webkit-animation: cloud-back 30s linear infinite;
+		-moz-animation: cloud-back 30s linear infinite;
+		-o-animation: cloud-back 30s linear infinite;
+		animation: cloud-back 30s linear infinite;
+	}
+
+	.img02 {	/*airplane with action-banner	*/
+		right: -900px;
+		-webkit-animation: flight 7s linear infinite;
+		-moz-animation: flight 7s linear infinite;
+		-o-animation: flight 7s linear infinite;
+		animation: flight 7s linear infinite;
+		z-index: 200;
+	}
+
+	.img03 {	/*clouds on the front, speed fast*/
+		-webkit-animation: cloud-front 7s linear infinite;
+		-moz-animation: cloud-front 7s linear infinite;
+		-o-animation: cloud-front 7s linear infinite;
+		animation: cloud-front 7s linear infinite;
+		z-index: 300;
+	}
+
+	/*text*/
+	[class^="txt"] {
+		font-family: 'Bangers', sans-serif, arial;
+		color: #990000;
+		font-size: 40px;
+		z-index: 500;
+	}
+
+	.txt01 {	/*text 1: "2 halen = 1 betalen!"*/
+		left: 910px; 
+		bottom: 160px;
+		-webkit-animation: text01-on 1s forwards, text01-loop 12s ease 1s infinite;
+		-moz-animation: text01-on 1s forwards, text01-loop 12s ease 1s infinite;
+		-o-animation: text01-on 1s forwards, text01-loop 12s ease 1s infinite;
+		animation: text01-on 1s forwards, text01-loop 12s ease 1s infinite;
+	}
+
+	.txt02 {	/*text 2: "Actie tot het einde van de week!"*/
+		left: -460px;
+		top: 165px;
+		-webkit-animation: text02-on 1s forwards, text02-loop 12s ease 1s infinite;
+		-moz-animation: text02-on 1s forwards, text02-loop 12s ease 1s infinite;
+		-o-animation: text02-on 1s forwards, text02-loop 12s ease 1s infinite;
+		animation: text02-on 1s forwards, text02-loop 12s ease 1s infinite;
+	}
+
+	.txt03 {	/*text 3: "10% Korting op het hele assortiment!"*/
+		left: 910px; 
+		bottom: 160px;
+		-webkit-animation: text03-loop 12s ease 1s infinite;
+		-moz-animation: text03-loop 12s ease 1s infinite;
+		-o-animation: text03-loop 12s ease 1s infinite;
+		animation: text03-loop 12s ease 1s infinite;
+	}
+
+	.txt04 {	/*text 4: "Ook op de wintercollectie"*/
+		left: -460px; 
+		top: 165px;
+		-webkit-animation: text04-loop 12s ease 1s infinite;
+		-moz-animation: text04-loop 12s ease 1s infinite;
+		-o-animation: text04-loop 12s ease 1s infinite;
+		animation: text04-loop 12s ease 1s infinite;
+	}
+
+
